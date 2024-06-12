@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/kayoe/Documents/Feliz%20dia%20dos%20namorados%20.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia Dos Namorados!!!</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1>Deseja continuar??</h1>
+           <img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-coracoes.gif" alt="">
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute; bottom: 23.2083%; left: 68.8182%;">NÃO</button>
+        </div>
+    </div>
+
+<style>
+    body{
+   background-color: rgb(250, 53, 53);
+    }
+
+  #conteudo {
+        margin: auto;
+        background-color:rgb(189, 189, 189);
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+
+    .btn {
+        background: rgb(250, 53, 53);
+        color: black;
+        border: white;
+        height: 40px;
+        width: 80px;
+        border-color: White;
+        border-radius: 10px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("Tem certeza???");
+        location.href = "https://open.spotify.com/intl-pt/track/3xYX0VdLSNDquiB7A8j6Xu";
+    }
+
+    function desvia(btn) {
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</body></html>
